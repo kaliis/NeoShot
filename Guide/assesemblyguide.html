@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Összeszerelési Útmutató</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+            color: #EAEAEA;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #222, #444);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #555;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+        }
+        .sidebar {
+            position: fixed;
+            right: -120px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px 0 0 10px;
+            box-shadow: -4px 0 10px rgba(0, 188, 212, 0.5);
+            transition: right 0.3s ease-in-out;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar::before {
+            content: '☰';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #00BCD4;
+            color: #111;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .sidebar:hover {
+            right: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: #00BCD4;
+            text-decoration: none;
+            padding: 11px 5px;
+            margin: 10px 0;
+            background: #2a2a2a;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.3s;
+            width: 100%;
+        }
+        .sidebar a:hover {
+            background: #00BCD4;
+            color: #111;
+            transform: scale(1.1);
+        }
+        main {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 50px;
+            background: #1c1c1c;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #2a2a2a;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 188, 212, 0.6);
+        }
+        .step img {
+            max-width: 240px;
+            border-radius: 12px;
+            border: 5px solid #00BCD4;
+            box-shadow: 0 0 20px #00BCD4, 0 0 40px rgba(0, 188, 212, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .step img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px #00BCD4, 0 0 60px rgba(0, 188, 212, 0.8);
+        }
+        .text {
+            max-width: 650px;
+        }
+        .text h2 {
+            margin: 0;
+            color: #00BCD4;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #00BCD4;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            text-shadow: 0 0 10px #00BCD4;
+        }
+        .text p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #DDDDDD;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: #AAA;
+            margin-top: 60px;
+            border-top: 4px solid #555;
+            font-size: 1.1rem;
+            letter-spacing: 1.2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Összeszerelési Útmutató</h1>
+    </header>
+    <div class="sidebar">
+        <a href="#">Főoldal</a>
+        <a href="#">Kapcsolat</a>
+        <a href="#">Rólunk</a>
+    </div>
+    <main>
+        <section class="step">
+            <img src="image00025.png"" alt="Első lépés">
+            <div class="text">
+                <h2>1-st step</h2>
+                <p>Remove the supports(highlighted with cyan) from the base.</p>
+            </div>
+        </section>
+        <section class="step">
+            <div class="text">
+                <h2>2-nd step</h2>
+                <p>Remove the supports(highlighted with cyan) from the mechanical parts.</p>
+            </div>
+            <img src="image00022.png"" alt="Második lépés">
+        </section>
+        <section class="step">
+            <img src="image00020.jpeg"" alt="Harmadik lépés">
+            <div class="text">
+                <h2>3-rd step</h2>
+                <p>Prepare the parts – Ensure that all connection points are clean and smooth. If necessary, lightly sand any rough edges for a better fit.Insert the fastening pins – Align the joints (pins) with the corresponding holes and carefully insert them. 
+				If the fit is tight, gently press them in or use a flat object to apply even pressure.</p>
+            </div>
+        </section>
+		<section class="step">
+            <div class="text">
+                <h2>4-th step</h2>
+                <p>Align the two parts – Place the two pieces in their correct position, ensuring that all connection points are properly aligned.
+				Secure the rubber band – Attach a rubber band to the designated area for the trigger mechanism. Make sure it has enough tension to function properly but is not too tight to avoid excessive strain.
+				Test the movement – Gently pull and release the trigger to check if the rubber band provides the necessary tension for smooth operation. Adjust if needed.</p>
+            </div>
+			<img src="image00017.jpeg"" alt="Második lépés">
+        </section>
+		<section class="step">
+            <img src="image00016.jpeg"" alt="Harmadik lépés">
+            <div class="text">
+                <h2>5-th step</h2>
+                <p>Position the top base – Place the top base piece onto the assembly, ensuring it aligns correctly with the structure.
+				Insert the screws – Use four screws to secure the top base in place. Tighten them evenly to ensure stability, but avoid overtightening to prevent damage.
+				Final check – Verify that all parts are securely fastened and the mechanism operates smoothly. You're done! Enjoy your creation! 🎉</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 assesembly
+    </footer>
+</body>
+</html>
